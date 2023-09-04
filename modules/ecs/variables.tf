@@ -47,3 +47,14 @@ variable "listener_priority" {
   type = string
   description = "Listener priority"
 }
+
+variable "environment_variables" {
+  type        = list(map(string))
+  default     = []
+  description = "Environment variables to inject at build time"
+}
+
+variable "route53_zone_id" {
+  type = string
+  description = "Route53 Hosted Zone ID"
+}
