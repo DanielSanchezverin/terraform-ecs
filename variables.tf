@@ -23,3 +23,8 @@ variable "private_subnet_cidr" {
   type        = list(string)
   description = "Private subnet CIDR block"
 }
+
+variable "domain" {
+  type        = string
+  description = "Domain Name"
+}
